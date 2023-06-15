@@ -25,7 +25,6 @@ basic.forever(function () {
             `)
     } else if (input.rotation(Rotation.Pitch) < -45) {
         radio.sendNumber(1)
-        basic.showIcon(IconNames.Tortoise)
         basic.showLeds(`
             . . # . .
             . # # # .
@@ -35,7 +34,6 @@ basic.forever(function () {
             `)
     } else if (input.rotation(Rotation.Pitch) > 45) {
         radio.sendNumber(2)
-        basic.showIcon(IconNames.StickFigure)
         basic.showLeds(`
             . . # . .
             . . # . .
